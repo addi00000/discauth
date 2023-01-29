@@ -71,12 +71,6 @@ const command = async (client: Client, message: Message, args: Array<String>) =>
                     .setDescription('Please click the buttons below to authorise yourself.')
                     .setColor('#FFFFFF')
                     .setTimestamp()
-                    .setFooter(
-                        {
-                            text: 'Authorisation provided by auth.addidix.xyz',
-                            iconURL: client.user.displayAvatarURL()
-                        }
-                    );
 
                 const row = new ActionRowBuilder()
                     .addComponents(
